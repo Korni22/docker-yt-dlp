@@ -3,4 +3,4 @@ USER root
 RUN ["apk", "add", "gcc", "libc-dev"]
 # USER yt-dlp
 RUN ["python3", "-m", "pip", "install", "--upgrade", "yt-dlp"]
-ENTRYPOINT /usr/local/bin/yt-dlp
+ENTRYPOINT ["/usr/local/bin/yt-dlp"]
