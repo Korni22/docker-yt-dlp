@@ -1,6 +1,6 @@
 FROM python:alpine
 USER root
-RUN wget https://github.com/wez/atomicparsley/releases/download/$ATOMIC_PARSLEY_RELEASE/AtomicParsleyAlpine.zip && \
+RUN wget https://github.com/wez/atomicparsley/releases/latest/download/AtomicParsleyAlpine.zip && \
 	unzip AtomicParsleyAlpine.zip && \
 	mv AtomicParsley /usr/local/bin && \
 	rm AtomicParsleyAlpine.zip
